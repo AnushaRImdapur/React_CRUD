@@ -3,7 +3,8 @@ import React from 'react'
 import Input from './Input'
 import Table from './Table'
 import Order from "./Order";
-import Search from "./Search"
+import Search from "./Search";
+import Pagination2 from "./Pagination2";
 var counter=0;
 class App extends React.Component{
     constructor(props){
@@ -81,7 +82,9 @@ class App extends React.Component{
     componentDidMount(){
       this.count()
     }
+
     render(){
+
       console.log(this.count())
         return(
             <div className="container">
@@ -104,6 +107,8 @@ class App extends React.Component{
                     <Order data={this.state.data} />
                     <hr />
                     <Search data={this.state.data} />
+                    <hr />
+                    <Pagination2 data={this.state.data}/>
             </div>
         )
     }
