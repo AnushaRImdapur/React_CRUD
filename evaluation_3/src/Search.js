@@ -15,7 +15,7 @@ class Search extends React.Component{
         })
     }
     filterItems(e) {
-        var arr=this.state.data;
+        var arr=this.props.data;
         var query=this.state.company
         
         return arr.filter(function(el) {

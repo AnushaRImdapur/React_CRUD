@@ -29,7 +29,7 @@ class Order extends React.Component{
         this.setState({data: arrayCopy});
     }
     render(){
-        var element=this.state.data.map((rowData,index)=><Row {...rowData} />);
+        var element=this.props.data.map((rowData,index)=><Row {...rowData} />);
         return(
             <table class="table table-bordered">
   <thead>

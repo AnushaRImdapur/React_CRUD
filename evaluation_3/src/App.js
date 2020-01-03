@@ -108,6 +108,7 @@ class App extends React.Component{
                     <hr />
                     <Search data={this.state.data} />
                     <hr />
+                    <h4>Pagination</h4>
                     <Pagination2 data={this.state.data}/>
             </div>
         )
